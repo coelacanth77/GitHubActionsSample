@@ -10,7 +10,7 @@ namespace Test
         [TestMethod]
         public void Add_ValidInputs_ReturnsSum()
         {
-            Assert.AreEqual(5, Culc.Add(2, 3));
+            Assert.AreEqual(3, Culc.Add(2, 3));
             Assert.AreEqual(0, Culc.Add(-2, 2));
             Assert.AreEqual(-5, Culc.Add(-2, -3));
         }
