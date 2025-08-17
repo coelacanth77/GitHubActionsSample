@@ -4,9 +4,15 @@ using ConsoleApp;
 
 namespace Test
 {
+    /// <summary>
+    /// Culcクラスの計算メソッドをテストするためのテストクラスです。
+    /// </summary>
     [TestClass]
     public sealed class CulcTest
     {
+        /// <summary>
+        /// Addメソッドが正常な入力で正しい合計を返すことをテストします。
+        /// </summary>
         [TestMethod]
         public void Add_ValidInputs_ReturnsSum()
         {
@@ -15,6 +21,9 @@ namespace Test
             Assert.AreEqual(-5, Culc.Add(-2, -3));
         }
 
+        /// <summary>
+        /// Subtractメソッドが正常な入力で正しい差を返すことをテストします。
+        /// </summary>
         [TestMethod]
         public void Subtract_ValidInputs_ReturnsDifference()
         {
@@ -23,6 +32,9 @@ namespace Test
             Assert.AreEqual(1, Culc.Subtract(-2, -3));
         }
 
+        /// <summary>
+        /// Multiplyメソッドが正常な入力で正しい積を返すことをテストします。
+        /// </summary>
         [TestMethod]
         public void Multiply_ValidInputs_ReturnsProduct()
         {
@@ -32,6 +44,9 @@ namespace Test
             Assert.AreEqual(0, Culc.Multiply(0, 5));
         }
 
+        /// <summary>
+        /// Divideメソッドが正常な入力で正しい商を返すことをテストします。
+        /// </summary>
         [TestMethod]
         public void Divide_ValidInputs_ReturnsQuotient()
         {
@@ -40,6 +55,9 @@ namespace Test
             Assert.AreEqual(1.5, Culc.Divide(3, 2));
         }
 
+        /// <summary>
+        /// Divideメソッドがゼロ除算の場合に例外をスローすることをテストします。
+        /// </summary>
         [TestMethod]
         [ExpectedException(typeof(DivideByZeroException))]
         public void Divide_ByZero_ThrowsException()
