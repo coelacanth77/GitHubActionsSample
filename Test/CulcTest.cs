@@ -18,7 +18,7 @@ namespace Test
         [TestMethod]
         public void Subtract_ValidInputs_ReturnsDifference()
         {
-            Assert.AreEqual(-3, Culc.Subtract(2, 3));
+            Assert.AreEqual(-1, Culc.Subtract(2, 3));
             Assert.AreEqual(-4, Culc.Subtract(-2, 2));
             Assert.AreEqual(1, Culc.Subtract(-2, -3));
         }
